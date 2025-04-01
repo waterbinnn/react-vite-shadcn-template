@@ -21,9 +21,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    /* Alias 설정 */
-    "baseUrl": ".", // 프로젝트 루트 기준
     "paths": {
       "@/*": ["./src/*"]
     }
