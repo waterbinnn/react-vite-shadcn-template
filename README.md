@@ -3,45 +3,40 @@
 React, Vite, TypeScript를 사용하여 프로젝트를 빠르게 시작할 수 있는 템플릿입니다.  
 TailwindCSS와 ShadCN/UI를 활용하여 효율적인 스타일링과 컴포넌트 구성을 제공합니다.
 
----
+## Getting Started
 
-## 시작하기
-
-### 사전 준비
+### Prerequisites
 
 - [Node.js](https://nodejs.org/) (version 18+ or 20+) 설치가 필요
 
-### 설치 및 설정
+### Setup
 
-1. **저장소 클론**
+1. **Clone or fork the repository**
 
    ```bash
    git clone https://github.com/waterbinnn/react-vite-shadcn-template.git
    cd react-vite-shadcn-template
    ```
 
-2. **의존성 설치**
+2. **Install the dependencies**
    ```bash
    yarn install
    ```
 
----
-
 ## Development
-
+To start the development server:
 ```bash
 yarn dev
 ```
 
 ## Build
-
+To create a production build:
 ```bash
 yarn build
 ```
-
 빌드 결과물은 `dist` 디렉토리에 생성됩니다.
 
-## 🗂️ 프로젝트 구조
+## 프로젝트 구조
 
 - `public/`: Contains static files
 - `src/`: React 애플리케이션 소스 코드
