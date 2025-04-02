@@ -1,16 +1,15 @@
-import tailwindTypography from '@tailwindcss/typography';
 import tailwindcssAnimate from 'tailwindcss-animate';
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ['class'],
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
-  },
-  theme: {
     extend: {
-      screens: {
-        xs: '20rem',
+      borderRadius: {
+        lg: 'var(--radius)',
+        md: 'calc(var(--radius) - 2px)',
+        sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
         background: 'hsl(var(--background))',
@@ -53,32 +52,9 @@ export default {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
-        pink: 'hsl(var(--pink))',
-        green: 'hsl(var(--green))',
-        yellow: 'hsl(var(--yellow))',
-        code: 'hsl(var(--code))',
-      },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
-      },
-      typography: {
-        DEFAULT: {
-          css: {
-            maxWidth: 'none',
-            '--tw-prose-body': 'hsl(0, 0%, 19%, 1)',
-            '--tw-prose-bold': 'hsl(var(--tw-prose-body))',
-            '--tw-prose-invert-bold': 'hsl(var(--tw-prose-invert-body))',
-            '--tw-prose-counters': 'hsl(var(--tw-prose-body))',
-            '--tw-prose-invert-counters': 'hsl(var(--tw-prose-body))',
-            '--tw-prose-bullets': 'hsl(var(--tw-prose-body))',
-            '--tw-prose-invert-bullets': 'hsl(var(--tw-prose-body))',
-          },
-        },
       },
     },
   },
 
-  plugins: [tailwindcssAnimate, tailwindTypography],
+  plugins: [tailwindcssAnimate],
 };
